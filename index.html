@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Сюда подключаем стили/This is where we plug in the styles -->
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Document</title>
 </head>
 
@@ -13,122 +14,218 @@
     <!-- Здесь будет структура документа/This is where the structure of the document will be -->
     <!--1.HEADER-->
     <header class="header">
-        <div class="header-top">
-            <nav>
-                <ul>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Story</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Testimonials</a></li>
+        <div class="header__top">
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">Shop</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">Home</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">Story</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">About</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">Blog</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">Testimonials</a></li>
                 </ul>
             </nav>
-            <a href="#" class="logo"><img src="#" alt="#"></a>
-            <div class="personal">
-                <ul>
-                    <li><a href="#"><img src="#" alt="#"></a></li>
-                    <li><a href="#"><img src="#" alt="#"></a></li>
-                    <li><a href="#"><img src="#" alt="#"></a><span></span></li>
+            <div class="header__logo logo">
+                <a class="logo__link" href="#" class="logo">
+                    <img class="logo__img" src="#" alt="#">
+                </a>
+            </div>
+            <div class="header__personal personal">
+                <ul class="personal__list">
+                    <li class="personal__list-item"><a class="personal__link" href="#"><img class="personal__img"
+                                src="#" alt="#"></a></li>
+                    <li class="personal__list-item"><a class="personal__link" href="#"><img class="personal__img"
+                                src="#" alt="#"></a></li>
+                    <li class="personal__list-item"><a class="personal__link" href="#"><img class="personal__img"
+                                src="#" alt="#"></a><span></span></li>
                 </ul>
             </div>
-            <div class="social">
-                <ul>
-                    <li><a href="#"><img src="#" alt="#"></a></li>
-                    <li><a href="#"><img src="#" alt="#"></a></li>
-                    <li><a href="#"><img src="#" alt="#"></a></li>
+            <div class="header__social social">
+                <ul class="social__list">
+                    <li class="social__list-item"><a class="social__list-link" href="#"><img class="social__list-img"
+                                src="#" alt="#"></a></li>
+                    <li class="social__list-item"><a class="social__list-link" href="#"><img class="social__list-img"
+                                src="#" alt="#"></a></li>
+                    <li class="social__list-item"><a class="social__list-link" href="#"><img class="social__list-img"
+                                src="#" alt="#"></a></li>
                 </ul>
             </div>
         </div>
-        <div class="header-content">
-            <button>Shop now</button>
+        <div class="header__content">
+            <button class="header__content-btn btn btn--green">Shop now</button>
         </div>
     </header>
     <!--2.SMOOTHIES-->
     <section class="smoothies">
-        <article class="article">
-            <h2>What are these smoothies?</h2>
-            <p>A smoothie is a drink made from pureed raw fruit, vegetables, a</p>
-        </article>
-        <div class="table"></div>
+        <div class="smoothies__container container">
+            <article class="smoothies__article article">
+                <h2 class="article__title title">What are these smoothies?</h2>
+                <p class="article__text text">A smoothie is a drink made from pureed raw fruit, vegetables, a</p>
+            </article>
+            <div class="smoothies__table table">
+                <ul class="table__list">
+                    <li class="table__list-item">
+                        <img class="table__list-img" src="" alt="">
+                        <span class="table__list-text"></span>
+                    </li>
+                    <li class="table__list-item">
+                        <img class="table__list-img" src="" alt="">
+                        <span class="table__list-text"></span>
+                    </li>
+                    <li class="table__list-item">
+                        <img class="table__list-img" src="" alt="">
+                        <span class="table__list-text"></span>
+                    </li>
+                    <li class="table__list-item">
+                        <img class="table__list-img" src="" alt="">
+                        <span class="table__list-text"></span>
+                    </li>
+                    <li class="table__list-item">
+                        <img class="table__list-img" src="" alt="">
+                        <span class="table__list-text"></span>
+                    </li>
+                    <li class="table__list-item">
+                        <img class="table__list-img" src="" alt="">
+                        <span class="table__list-text"></span>
+                    </li>
+                    <li class="table__list-item">
+                        <img class="table__list-img" src="" alt="">
+                        <span class="table__list-text"></span>
+                    </li>
+                    <li class="table__list-item">
+                        <img class="table__list-img" src="" alt="">
+                        <span class="table__list-text"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
     <!--3.ABOUT-->
     <section class="about">
-        <img src="#" alt="#">
-        <div>
-            <h2>What makes Smoothie an awesome drink?</h2>
+        <div class="about_container container">
+            <img class="about_img" src="#" alt="Image 'About'">
+            <div class="about_info info">
+                <h2 class="info_title title">What makes Smoothie an awesome drink?</h2>
+                <ul class="info_list">
+                    <li class="info_list-item">Crunchy Puffs Texture</li>
+                    <li class="info_list-item">100 Calories per drink</li>
+                    <li class="info_list-item">4g Plant Protein</li>
+                    <li class="info_list-item">Good source of Magnesium & Vitamin B6</li>
+                    <li class="info_list-item">No Sugar in our Savary Flavors</li>
+                    <li class="info_list-item">Non-GMO, Vegan & Paleo</li>
+                    <li class="info_list-item">Gluten-Free & Grain-Free</li>
+                    <li class="info_list-item">Corn-Free & Soy-Free</li>
+                </ul>
+                <button class="info-btn btn btn--green">About Organic Smoothie</button>
+            </div>
         </div>
     </section>
     <!--4.PRODUCTS-->
     <section class="products">
-        <div class="chocolate">
-            <img src="" alt="">
-            <h3>Dark Chocolate Smoothie</h3>
-            <p>100 ml</p>
-            <button>Buy</button>
+        <div class="products__item products__item--bg-brown">
+            <img class="products__img" src="" alt="">
+            <h3 class="products__title title">Dark Chocolate Smoothie</h3>
+            <span class="products__text">100 ml</span>
+            <button class="products__btn btn">Buy</button>
         </div>
-        <div class="lettuce">
-            <img src="" alt="">
-            <h3>Vegan Lettuce Smoothie</h3>
-            <p>100 ml</p>
-            <button>Buy</button>
+        <div class="products__item  products__item--bg-green">
+            <img class="products__img" src="" alt="">
+            <h3 class="products__title title">Vegan Lettuce Smoothie</h3>
+            <span class="products__text">100 ml</span>
+            <button class="products__btn btn">Buy</button>
         </div>
-        <div class="ginger">
-            <img src="" alt="">
-            <h3>Lemon Ginger Smoothie</h3>
-            <p>100 ml</p>
-            <button>Buy</button>
+        <div class="products__item products__item--bg-yellow">
+            <img class="products__img" src="" alt="">
+            <h3 class="products__title title">Lemon Ginger Smoothie</h3>
+            <span class="products__text">100 ml</span>
+            <button class="products__btn btn">Buy</button>
         </div>
-        <div class="garlic">
-            <img src="" alt="">
-            <h3>Turmeric Garlic Smoothie</h3>
-            <p>100 ml</p>
-            <button>Buy</button>
+        <div class="products__item products__item--bg-orange">
+            <img class="products__img" src="" alt="">
+            <h3 class="products__title title">Turmeric Garlic Smoothie</h3>
+            <span class="products__text">100 ml</span>
+            <button class="products__btn btn">Buy</button>
         </div>
     </section>
     <!--5.STORY-->
     <section class="story">
-        <div>
-            <h2>Our story</h2>
-            <p>As products typically using raw fruits or vegetables</p>
+        <div class="story__container container">
+            <div class="story__wrapper">
+                <article class="story__info info">
+                    <h2 class="info__title title">Our story</h2>
+                    <p class="info__text">As products typically using raw fruits or vegetables</p>
+                    <button class="info__btn btn btn--green">Who we are</button>
+                </article>
+                <div class="story__inner">
+                    <img class="story__inner-img" src="" alt="">
+                </div>
+            </div>
         </div>
-        <button>Who we are</button>
-        <img src="" alt="">
     </section>
     <!--6.TESTIMONIALS-->
     <section class="testimonials">
-        <h2>Why clients LOVE us?</h2>
-        <div>
-            <p></p>
-            <cite></cite>
-            <img></img>
-        </div>
-        <div>
-            <button></button>
-            <button></button>
+        <div class="testimonials__container container">
+            <h2 class="testimonials__title title">Why clients LOVE us?</h2>
+            <div class="testimonials__inner-text">
+                <p class="testimonials__text"></p>
+                <cite class="testimonials__cite"></cite>
+                <img class="testimonials__img" src="" alt="">
+            </div>
+            <div class="testimonials__inner-btn">
+                <button class="testimonials__btn"></button>
+                <button class="testimonials__btn"></button>
+            </div>
         </div>
     </section>
     <!--7.BLOG-->
     <section class="blog">
-        <h2></h2>
-        <div>
-            <img src="" alt="">
-            <div class="line"></div>
-            <div>
-                <h3>ASAFOETIDA - THE NEXT TURMERIC?</h3>
-                <data value=""></data>
-                <p>If the fruit ingredients and the green vegetable ingredients ar<span>Read more</span></p>
-                <button></button>
+        <div class="blog__container container">
+            <h2 class="blog__title title"></h2>
+            <div class="blog__inner">
+                <img class="blog__img" src="" alt="">
+                <div class="blog__info">
+                    <h3 class="blog__info-title title">ASAFOETIDA - THE NEXT TURMERIC?</h3>
+                    <data class="blog__info-data" value=""></data>
+                    <p class="blog__info-text">If the fruit ingredients and the green vegetable ingredients ar<span>Read more</span></p>
+                    <button class="blog__info-btn btn"></button></button>
+                </div>
             </div>
-            <div class="instagram-logo"><a href="#"></a></div>
         </div>
     </section>
     <!--8.INSTAGRAM-->
-    <section class="instagram"></section>
+    <section class="instagram">
+        <div class="instagram__social">
+            <a class="instagram__social-link" href="#"></a>
+        </div>
+        <div class="instagram__images">
+            <img  class="instagram__img" src="" alt="">
+            <img  class="instagram__img" src="" alt="">
+            <img  class="instagram__img" src="" alt="">
+            <img  class="instagram__img" src="" alt="">
+            <img  class="instagram__img" src="" alt="">
+        </div>
+    </section>
     <!--9.FOOTER-->
-    <footer class="footer"></footer>
-    
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__logo logo">
+                <a class="logo__link" href="#" class="logo">
+                    <img class="logo__img" src="#" alt="#">
+                </a>
+            </div>
+            <div class="footer__information"></div>
+            <div class="footer__payment"></div>
+            <div class="footer__social"></div>
+        </div>
+        <div class="footer__copyright">
+            <small class="footer__copyright-text">© 2020. All Rights Reserved.</small>
+            <div class="footer__copyright-inner">
+                <span class="footer__copyright-inner-text">Go top</span>
+                <button class="footer__copyright-inner-btn btn"></button>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
-
