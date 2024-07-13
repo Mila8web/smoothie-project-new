@@ -245,3 +245,67 @@ margin-right: 45px;
 .about {
     background-color: #14826f;
 }
+
+.about__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    border: solid 1px #1e1e1e;
+}
+
+.about__inner-img {
+    width: 690px;
+}
+
+.about__inner-info {
+    padding-top: 30px;
+    padding-left: 140px;
+    width: 600px;
+}
+
+.info__title {
+    font-family: "MuliExtraBolt";
+    font-size: 55px;
+    line-height: 60px;
+    letter-spacing: -1px;
+    color: white;
+}
+
+.info__title--span {
+    color: #cae941;
+}
+
+.info__list {
+    padding: 70px 0 25px 25px;
+}
+
+.info__list-item {
+    font-family: "MuliBlack";
+    font-size: 21px;
+    line-height: 22px;
+    color: white;
+    padding: 0 25px 20px;
+
+    list-style-image: url(../assets/images/about-marker1.png);
+
+}
+
+.info__list-item--span {
+    font-family: "MuliExtraBolt";
+}
+
+.info-btn {
+    width: 380px;
+    height: 60px;
+}
+
+.btn--green-trp {
+    background-color: #14826f;
+    border-radius: 30px;
+    border: solid 2px #f8b231;
+    padding: 0 10px;
+}
+
+.info__btn-arrow {
+    padding: 0 10px;
+}
