@@ -51,7 +51,7 @@ body {
     font-family: "MuliRegular", sans-serif;
     margin: 0;
     height: 100vh;
-    font-size: 18px;
+    /* font-size: 18px; */
     line-height: 1.1;
 }
 
@@ -307,5 +307,68 @@ margin-right: 45px;
 }
 
 .info__btn-arrow {
+    padding: 0 10px;
+}
+
+/* 4.PRODUCTS */
+.products {
+    height: 720px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 25%;
+}
+
+.products__item--bg-brown {
+    background-color: #632b17;
+}
+
+.products__item--bg-green {
+    background-color: #178670;
+}
+
+.products__item--bg-yellow {
+    background-color: #f7ae3b;
+}
+
+.products__item--bg-orange {
+    background-color: #c3471b;
+}
+
+.products__img {
+    padding: 130px 0 34px;
+}
+
+.products__title {
+    font-family: "MuliBolt";
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    line-height: 22px;
+}
+
+.products__text {
+    font-family: "MuliItalic";
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    line-height: 32px;
+    padding: 5px 0 65px;
+}
+
+.products__btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 204px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: solid 2px white;
     padding: 0 10px;
 }
