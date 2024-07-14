@@ -543,9 +543,6 @@ margin-right: 45px;
 }
 
 .testimonials__title {
-    /* width: 504px;
-        height: 50px;
-        margin: 0 115px 83px 270px; */
     font-family: MuliExtraBold;
     font-size: 50px;
     font-weight: 800;
@@ -628,4 +625,103 @@ margin-right: 45px;
     background-color: #672f1b;
 }
 
-.btn-arrow-yellow {}
+/* 6.TESTIMONIALS */
+.blog {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog__container {
+    height: 500px;
+    width: 1200px;
+}
+
+.blog__title {
+    padding-bottom: 50px;
+    font-family: "MuliExtraBolt";
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 0.8;
+    letter-spacing: -1px;
+    color: #f7ae3b;
+}
+
+.blog__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.blog__info {
+    position: relative;
+}
+
+.blog__info::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 15px;
+    width: 700px;
+    background-image: url("../assets/images/blog-line-img.png");
+    background-size: cover;
+    top: 70px;
+    right: -22px;
+    z-index: -1;
+}
+
+.blog__info-title {
+    font-family: "MuliExtraBolt";
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.33;
+    letter-spacing: -0.6px;
+    padding-left: 60px;
+    color: #f2612d;
+    padding-top: 130px;
+}
+
+.blog__info-data {
+    font-family: "MuliRegular";
+    font-size: 16px;
+    line-height: 2.19;
+    text-align: left;
+    color: #1e1e1e;
+    padding-left: 60px;
+}
+
+.blog__info-text {
+    font-family: Muli;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.94;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e1e1e;
+    padding-left: 125px;
+    max-width: 541px;
+}
+
+.blog__info-text--span {
+    font-weight: 800;
+    font-style: "MuliExtraBoldItalic";
+}
+
+.blog__btn {
+    position: relative;
+}
+
+.blog__btn::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 10px;
+    width: 18px;
+    background-image: url("../assets/images/blog-arrow-yellow-small.png");
+    background-size: cover;
+    top: -35px;
+    right: -400px;
+}
