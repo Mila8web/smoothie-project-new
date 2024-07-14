@@ -201,8 +201,9 @@ margin-right: 45px;
     border-radius: 35px;
     font-size: 24px;
     font-family: "MuliExtraBolt", sans-serif;
-    /* padding: 0 20px; */
     color: white;
+    text-align: start;
+    padding-left: 40px;
 }
 
 .btn--green-bg {
@@ -231,6 +232,7 @@ margin-right: 45px;
 .btn--green-bg:hover::after {
     right: 20px;
 }
+
 
 /* 2.SMOOTHIES */
 .smoothies__article {
@@ -520,3 +522,110 @@ margin-right: 45px;
 .story__btn-arrow {
     padding-left: 50px;
 }
+
+/* 6.TESTIMONIALS */
+.testimonials {
+    height: 720px;
+    background-color: #672f1b;
+    position: relative;
+}
+
+.testimonials::after {
+    content: "";
+    display: inline-block;
+    width: 410px;
+    height: 300px;
+    background-image: url("../assets/images/testimonials-dots-ing.png");
+    background-size: cover;
+    position: absolute;
+    top: -80px;
+    right: 30px;
+}
+
+.testimonials__title {
+    /* width: 504px;
+        height: 50px;
+        margin: 0 115px 83px 270px; */
+    font-family: MuliExtraBold;
+    font-size: 50px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.8;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #f7ae3b;
+    padding: 118px 0;
+}
+
+.testimonials__title--span {
+    color: #f2612d;
+}
+
+.testimonials__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 140px;
+    position: relative;
+}
+
+.testimonials__inner-text {
+    width: 460px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials__text {
+    font-family: "MuliRegular";
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: white;
+}
+
+.testimonials__cite {
+    font-weight: 600;
+    font-style: "MuliSemiBoldItalic";
+    line-height: 2.5;
+    color: #f7ae3b;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.testimonials__img,
+.testimonials__text,
+.testimonials__cite {
+    z-index: 1;
+}
+
+
+.testimonials__wrapper::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background-image: url("../assets/images/testimonials-sarah.png");
+    background-size: cover;
+    width: 764px;
+    height: 148px;
+    top: -60px;
+    left: 430px;
+}
+
+.testimonials__inner-btn {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.testimonials__btn {
+    background-color: #672f1b;
+}
+
+.btn-arrow-yellow {}
