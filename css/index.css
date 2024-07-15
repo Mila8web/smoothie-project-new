@@ -625,7 +625,7 @@ margin-right: 45px;
     background-color: #672f1b;
 }
 
-/* 6.TESTIMONIALS */
+/* 7.BLOG */
 .blog {
     height: 700px;
     display: flex;
@@ -725,3 +725,44 @@ margin-right: 45px;
     top: -35px;
     right: -400px;
 }
+
+/* 8.INSTAGRAM */
+
+.instagram {
+    height: 560px;
+}
+
+.instagram__social {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 45px;
+}
+.instagram__social-link {
+  font-family: "MuliExtraBold";
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.67;
+  letter-spacing: -0.48px;
+  text-align: left;
+  color: #0aa566;
+  position: relative;
+}
+
+.instagram__social-link::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    background-image: url("../assets/images/instagram-logo.png");
+    background-size: cover;
+    top: 8px;
+    right: 166px;
+}
+
+.instagram__inner-img {
+    display: flex;
+    flex-basis: 20%;
+    padding-bottom: 10px;
+}
+
