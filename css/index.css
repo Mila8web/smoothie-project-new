@@ -10,19 +10,19 @@
 }
 
 @font-face {
-    font-family: "MuliBolt";
+    font-family: "MuliBold";
     src: url(../assets/fonts/Muli-Bold.ttf);
     font-style: normal;
 }
 
 @font-face {
-    font-family: "MuliBoltItalic";
+    font-family: "MuliBoldItalic";
     src: url(../assets/fonts/Muli-BoldItalic.ttf);
     font-style: normal;
 }
 
 @font-face {
-    font-family: "MuliExtraBolt";
+    font-family: "MuliExtraBold";
     src: url(../assets/fonts/Muli-ExtraBold.woff);
     font-style: normal;
 }
@@ -34,7 +34,7 @@
 }
 
 @font-face {
-    font-family: "MuliSemiBoltItalic";
+    font-family: "MuliSemiBoldItalic";
     src: url(../assets/fonts/Muli-Semi-BoldItalic.ttf);
     font-style: normal;
 }
@@ -99,7 +99,7 @@ height: 11px; */
 }
 
 .nav__list-link {
-    font-family: "MuliBolt";
+    font-family: "MuliBold";
     font-size: 16px;
     color: white;
     text-transform: uppercase;
@@ -200,7 +200,7 @@ margin-right: 45px;
 .btn {
     border-radius: 35px;
     font-size: 24px;
-    font-family: "MuliExtraBolt", sans-serif;
+    font-family: "MuliExtraBold", sans-serif;
     color: white;
     text-align: start;
     padding-left: 40px;
@@ -242,7 +242,7 @@ margin-right: 45px;
 }
 
 .article__title {
-    font-family: "MuliExtraBolt";
+    font-family: "MuliExtraBold";
     font-size: 50px;
     color: #f7ae3b;
     margin: 98px 0 0;
@@ -280,7 +280,7 @@ margin-right: 45px;
 }
 
 .table__list-span {
-    font-family: "MuliExtraBolt";
+    font-family: "MuliExtraBold";
     font-size: 25px;
     line-height: 30px;
     text-align: center;
@@ -325,12 +325,11 @@ margin-right: 45px;
 }
 
 .info__title {
-    font-family: "MuliExtraBolt";
+    font-family: "MuliExtraBold";
     font-size: 55px;
     line-height: 60px;
-    letter-spacing: -1px;
     color: white;
-    width: 600px;
+    width: 680px;
 }
 
 .info__title--span {
@@ -347,7 +346,7 @@ margin-right: 45px;
     background-size: cover;
     position: absolute;
     top: 60px;
-    left: -10px;
+    left: -15px;
 }
 
 .info__list {
@@ -364,7 +363,7 @@ margin-right: 45px;
 }
 
 .info__list-item--span {
-    font-family: "MuliExtraBolt";
+    font-family: "MuliExtraBold";
 }
 
 .info-btn {
@@ -418,7 +417,7 @@ margin-right: 45px;
 }
 
 .products__title {
-    font-family: "MuliBolt";
+    font-family: "MuliBold";
     font-size: 24px;
     color: white;
     text-align: center;
@@ -515,7 +514,7 @@ margin-right: 45px;
     height: 60px;
     border-radius: 30px;
     font-size: 21px;
-    font-family: "MuliExtraBolt";
+    font-family: "MuliExtraBold";
     padding-left: 30px;
 }
 
@@ -640,7 +639,7 @@ margin-right: 45px;
 
 .blog__title {
     padding-bottom: 50px;
-    font-family: "MuliExtraBolt";
+    font-family: "MuliExtraBold";
     font-size: 50px;
     font-weight: 800;
     line-height: 0.8;
@@ -672,7 +671,7 @@ margin-right: 45px;
 }
 
 .blog__info-title {
-    font-family: "MuliExtraBolt";
+    font-family: "MuliExtraBold";
     font-size: 30px;
     font-weight: 800;
     line-height: 1.33;
@@ -737,15 +736,16 @@ margin-right: 45px;
     justify-content: center;
     padding: 100px 0 45px;
 }
+
 .instagram__social-link {
-  font-family: "MuliExtraBold";
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 1.67;
-  letter-spacing: -0.48px;
-  text-align: left;
-  color: #0aa566;
-  position: relative;
+    font-family: "MuliExtraBold";
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.67;
+    letter-spacing: -0.48px;
+    text-align: left;
+    color: #0aa566;
+    position: relative;
 }
 
 .instagram__social-link::after {
@@ -757,7 +757,7 @@ margin-right: 45px;
     background-image: url("../assets/images/instagram-logo.png");
     background-size: cover;
     top: 8px;
-    right: 166px;
+    right: 190px;
 }
 
 .instagram__inner-img {
@@ -766,3 +766,136 @@ margin-right: 45px;
     padding-bottom: 10px;
 }
 
+/* 9.FOOTER */
+.footer__top {
+    height: 372px;
+    background-color: #f6ab3b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__title {
+    font-family: "MuliExtraBold";
+    font-size: 26px;
+    font-weight: 800;
+    color: white;
+    padding-bottom: 36px;
+}
+
+.footer__information-link {
+    font-family: "MuliBold";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.94;
+    letter-spacing: -0.36px;
+    text-align: left;
+    color: #6d450c;
+}
+
+.footer__payment {
+    width: 260px;
+}
+
+.footer__payment-title {
+    padding-bottom: 35px;
+}
+
+.footer__payment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer__subscribe {
+    width: 495px;
+    height: 60px;
+    border-radius: 30px;
+    font-family: "MuliBold";
+    font-size: 17px;
+    font-weight: bold;
+    color: #6d450c;
+    background-image: url(../assets/images/footer-Icon-email.png);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    text-align: left;
+    padding-left: 62px;
+}
+
+.footer__social-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    padding-right: 54px;
+    height: 90px;
+}
+
+.footer__social-span {
+    position: relative;
+    font-family: "MuliExtraBold";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #6d450c;
+}
+
+.footer__social-span::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 43px;
+    width: 48px;
+    background-image: url("../assets/images/footer-arrow-img.png");
+    background-size: cover;
+    top: -20px;
+    right: 125px;
+}
+
+.footer__social-items {
+    height: 26px;
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    height: 60px;
+    background-color: #6c2c1c;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 660px;
+}
+
+.footer__copyright-text {
+  font-family: "MuliRegular";
+  font-size: 13px;
+  line-height: 3;
+  color: #af8a82;
+}
+
+.footer__copyright-span {
+    font-family: "MuliBold";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 3;
+    color: white;
+    padding: 0 100px 0 40px;
+    position: relative;
+}
+
+.footer__copyright-span::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #f2662f;
+    background-image: url("../assets/images/footer-btn-arrow-top.png");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -50px;
+    right: 50px;
+}
