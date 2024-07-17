@@ -1,5 +1,6 @@
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    border-color: transparent;
 }
 
 /* Add fonts */
@@ -68,7 +69,7 @@ a {
     text-decoration: none;
 }
 
-button {
+.btn {
     background-color: #0aa566;
     border-radius: 30px;
 }
@@ -87,7 +88,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 65px 0 120px 0;
+    padding: 70px 0 120px 0;
 }
 
 .nav__list {
@@ -869,10 +870,10 @@ margin-right: 45px;
 }
 
 .footer__copyright-text {
-  font-family: "MuliRegular";
-  font-size: 13px;
-  line-height: 3;
-  color: #af8a82;
+    font-family: "MuliRegular";
+    font-size: 13px;
+    line-height: 3;
+    color: #af8a82;
 }
 
 .footer__copyright-span {
@@ -898,4 +899,8 @@ margin-right: 45px;
     background-position: center;
     top: -50px;
     right: 50px;
+}
+
+.footer__btn {
+    background-color: transparent;
 }
