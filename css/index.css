@@ -109,7 +109,7 @@ a {
 }
 
 .header__logo {
-    margin-right: 160px; 
+    margin-right: 160px;
 }
 
 .header__right-block {
@@ -227,6 +227,7 @@ a {
 .smoothies {
     height: 880px;
 }
+
 .smoothies__article {
     display: flex;
     flex-direction: column;
@@ -315,12 +316,12 @@ a {
     width: 1600px;
     height: 740px;
     margin: 55px 0 5px;
-    padding-right: 194px;
+    padding-right: 96px;
     z-index: 999;
 }
 
 .about__inner-info {
-    padding-top: 30px;
+    padding-top: 25px;
     position: relative;
 }
 
@@ -333,13 +334,15 @@ a {
     background-size: cover;
     position: absolute;
     top: 0;
-    left: -810px;
+    left: -830px;
 }
 
 .info__title {
     font-family: "MuliExtraBold";
     font-size: 55px;
     line-height: 60px;
+    line-height: 1.09;
+    letter-spacing: -1.1px;
     color: white;
     width: 680px;
 }
@@ -362,13 +365,14 @@ a {
 }
 
 .info__list {
-    padding: 70px 0 25px 25px;
+    padding: 58px 0 35px 14px;
 }
 
 .info__list-item {
     font-family: "MuliBlack";
     font-size: 21px;
     line-height: 22px;
+    line-height: 1.05;
     color: white;
     padding: 0 25px 20px;
     list-style-image: url(../assets/images/about-marker1.png);
@@ -381,17 +385,23 @@ a {
 .info-btn {
     width: 380px;
     height: 60px;
+    font-family: "MuliExtraBold";
+    font-size: 21px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.05;
 }
 
 .btn--green-trp {
     background-color: #14826f;
     border-radius: 30px;
     border: solid 2px #f8b231;
-    padding: 0 10px;
+    padding: 0 27px;
 }
 
 .info__btn-arrow {
-    padding: 0 10px;
+    padding-left: 22px;
 }
 
 /* 4.PRODUCTS */
@@ -425,15 +435,15 @@ a {
 }
 
 .products__img {
-    padding: 130px 0 34px;
+    padding: 130px 0 28px;
 }
 
 .products__title {
     font-family: "MuliBold";
     font-size: 24px;
+    line-height: 0.92;
     color: white;
     text-align: center;
-    line-height: 22px;
 }
 
 .products__text {
@@ -441,8 +451,8 @@ a {
     font-size: 21px;
     color: white;
     text-align: center;
-    line-height: 32px;
-    padding: 5px 0 65px;
+    line-height: 1.52;
+    padding: 7px 0 60px;
 }
 
 .products__btn {
@@ -454,7 +464,7 @@ a {
     background-color: transparent;
     border-radius: 30px;
     border: solid 2px white;
-    padding: 0 10px;
+    padding: 0 3px;
 }
 
 /* 5.STORY */
@@ -780,7 +790,8 @@ a {
 }
 
 .instagram__img {
-    overflow-x: hidden;;
+    overflow-x: hidden;
+    ;
 }
 
 /* 9.FOOTER */
