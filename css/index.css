@@ -743,8 +743,8 @@ a {
     width: 18px;
     background-image: url("../assets/images/blog-arrow-yellow-small.png");
     background-size: cover;
-    top: -38px;
-    right: -388px;
+    top: -35px;
+    right: -380px;
 }
 
 /* 8.INSTAGRAM */
@@ -801,6 +801,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-left: 30px;
 }
 
 .footer__title {
@@ -811,12 +812,17 @@ a {
     padding-bottom: 36px;
 }
 
+.footer__information {
+    padding-left: 140px;
+    padding-bottom: 15px;
+}
+
 .footer__information-link {
     font-family: "MuliBold";
     font-size: 18px;
     font-weight: bold;
     line-height: 1.94;
-    letter-spacing: -0.36px;
+    letter-spacing: -2px;
     text-align: left;
     color: #6d450c;
 }
@@ -825,14 +831,11 @@ a {
     width: 260px;
 }
 
-.footer__payment-title {
-    padding-bottom: 35px;
-}
-
 .footer__payment-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    padding-top: 10px;
 }
 
 .footer__subscribe {
@@ -909,25 +912,22 @@ a {
     font-weight: bold;
     line-height: 3;
     color: white;
-    padding: 0 100px 0 40px;
+    padding: 0 156px 0 6px;
     position: relative;
 }
 
-.footer__copyright-span::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
+.footer__btn {
     height: 50px;
     width: 50px;
     background-color: #f2662f;
-    background-image: url("../assets/images/footer-btn-arrow-top.png");
-    background-size: 25%;
-    background-repeat: no-repeat;
-    background-position: center;
-    top: -50px;
-    right: 50px;
+    position: fixed;
+    bottom: 14px;
+    right: 80px;
+    border-radius: 5px;
+    z-index: 999;
 }
 
-.footer__btn {
-    background-color: transparent;
+.footer__btn-arrow-top {
+    background-size: cover;
+    width: 20%;
 }
