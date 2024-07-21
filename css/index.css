@@ -473,10 +473,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 42px;
 }
 
 .story__container {
-    width: 1300px;
+    max-width: 1300px;
     height: 600px;
     display: flex;
     align-items: center;
@@ -484,7 +485,7 @@ a {
 }
 
 .story__info {
-    width: 520px;
+    max-width: 520px;
 }
 
 .story__title {
@@ -503,7 +504,7 @@ a {
     line-height: 2;
     text-align: left;
     color: #1e1e1e;
-    padding: 43px 0 60px;
+    padding: 34px 0 44px;
 }
 
 .story__inner-img {
