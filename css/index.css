@@ -661,27 +661,27 @@ a {
 
 .blog__container {
     height: 500px;
-    width: 1200px;
+    max-width: 1200px;
 }
 
 .blog__title {
-    padding-bottom: 50px;
     font-family: "MuliExtraBold";
     font-size: 50px;
     font-weight: 800;
     line-height: 0.8;
-    letter-spacing: -1px;
+    letter-spacing: -5px;
     color: #f7ae3b;
+    padding-bottom: 56px;
 }
 
-.blog__inner {
+.blog__wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    padding-right: 45px;
 }
 
 .blog__info {
     position: relative;
+    padding-left: 65px;
 }
 
 .blog__info::after {
@@ -693,7 +693,8 @@ a {
     background-image: url("../assets/images/blog-line-img.png");
     background-size: cover;
     top: 70px;
-    right: -22px;
+    right: -48px;
+    border-radius: 10px;
     z-index: -1;
 }
 
@@ -702,10 +703,9 @@ a {
     font-size: 30px;
     font-weight: 800;
     line-height: 1.33;
-    letter-spacing: -0.6px;
-    padding-left: 60px;
+    letter-spacing: -4px;
     color: #f2612d;
-    padding-top: 130px;
+    padding-top: 124px;
 }
 
 .blog__info-data {
@@ -714,33 +714,28 @@ a {
     line-height: 2.19;
     text-align: left;
     color: #1e1e1e;
-    padding-left: 60px;
 }
 
 .blog__info-text {
-    font-family: Muli;
+    font-family: "MuliRegular";
     font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.94;
-    letter-spacing: normal;
-    text-align: left;
     color: #1e1e1e;
-    padding-left: 125px;
-    max-width: 541px;
+    padding-left: 60px;
+    padding-top: 25px;
+    width: 532px;
 }
 
-.blog__info-text--span {
+.blog__info-span {
     font-weight: 800;
-    font-style: "MuliExtraBoldItalic";
+    letter-spacing: -1px;
 }
 
-.blog__btn {
+.blog__link-arrow {
     position: relative;
 }
 
-.blog__btn::after {
+.blog__link-arrow::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -748,8 +743,8 @@ a {
     width: 18px;
     background-image: url("../assets/images/blog-arrow-yellow-small.png");
     background-size: cover;
-    top: -35px;
-    right: -400px;
+    top: -38px;
+    right: -388px;
 }
 
 /* 8.INSTAGRAM */
