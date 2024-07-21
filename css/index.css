@@ -223,8 +223,10 @@ a {
     right: 20px;
 }
 
-
 /* 2.SMOOTHIES */
+.smoothies {
+    height: 880px;
+}
 .smoothies__article {
     display: flex;
     flex-direction: column;
@@ -234,16 +236,20 @@ a {
 .article__title {
     font-family: "MuliExtraBold";
     font-size: 50px;
+    line-height: 0.8;
+    letter-spacing: -1px;
+    font-weight: 800;
     color: #f7ae3b;
-    margin: 98px 0 0;
+    margin: 98px 0 0 0;
+    padding-left: 14px;
 }
 
 .article__text {
-    width: 915px;
-    margin: 55px 35px 61px 22px;
+    max-width: 915px;
+    margin: 40px 10px 40px 24px;
     font-family: "MuliRegular";
     font-size: 18px;
-    line-height: 2;
+    line-height: 1.94;
     text-align: center;
     color: #1e1e1e;
 }
@@ -251,13 +257,12 @@ a {
 .smoothies__table {
     display: flex;
     justify-content: center;
-    margin-bottom: 115px;
 }
 
 .table__list {
     display: flex;
     flex-wrap: wrap;
-    width: 1020px;
+    width: 1000px;
 }
 
 .table__list-item {
@@ -267,6 +272,23 @@ a {
     flex-direction: column;
     width: 250px;
     height: 200px;
+    border-left: 2px solid #f6edde;
+}
+
+.table__list-item:first-child,
+.table__list-item:nth-child(2),
+.table__list-item:nth-child(3),
+.table__list-item:nth-child(4) {
+    border-bottom: 2px solid #f6edde;
+}
+
+.table__list-item:first-child,
+.table__list-item:nth-child(5) {
+    border-left: none;
+}
+
+.table__list-img {
+    padding-top: 40px;
 }
 
 .table__list-span {
