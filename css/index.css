@@ -597,6 +597,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
 .testimonials__text {
@@ -604,9 +605,10 @@ a {
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
-    line-height: 2;
+    line-height: 1.94;
     letter-spacing: normal;
     color: white;
+    text-align: center;
 }
 
 .testimonials__cite {
@@ -633,14 +635,16 @@ a {
     background-size: cover;
     width: 764px;
     height: 148px;
-    top: -60px;
-    left: 430px;
+    top: -30px;
+    left: 440px;
 }
 
 .testimonials__inner-btn {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    align-items: center;
+    height: 0;
+    gap: 98px;
 }
 
 .testimonials__btn {
