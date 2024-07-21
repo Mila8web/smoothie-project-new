@@ -52,7 +52,6 @@ body {
     font-family: "MuliRegular", sans-serif;
     margin: 0;
     height: 100vh;
-    /* font-size: 18px; */
     line-height: 1.1;
 }
 
@@ -82,21 +81,24 @@ a {
     background: url(../assets/images/header-bg-img.png);
     background-position: center;
     background-size: cover;
+    overflow: auto;
 }
 
 .header__top {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 70px 0 120px 0;
+    padding: 68px 0 104px 0;
+}
+
+.header__nav {
+    margin-right: 30px;
 }
 
 .nav__list {
     display: flex;
-    column-gap: 35px;
+    column-gap: 34px;
     justify-content: space-between;
-    /* width: 540px;
-height: 11px; */
 }
 
 .nav__list-link {
@@ -107,19 +109,18 @@ height: 11px; */
 }
 
 .header__logo {
-    /* margin: 0 345px 0 210px; */
-    /* padding: 0 35px; */
+    margin-right: 160px; 
 }
 
 .header__right-block {
     display: flex;
-    column-gap: 150px;
+    column-gap: 130px;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .header__personal {
     position: relative;
+    margin-right: 6px;
 }
 
 .header__personal::after {
@@ -140,15 +141,6 @@ height: 11px; */
     column-gap: 45px;
 }
 
-/* .personal__list-item {
-margin-right: 45px;
-} */
-
-/* .personal__list-item:last-child {
-    margin-right: 0px; 
-    position: relative; 
-    }  */
-
 .personal__link:last-child {
     position: relative;
     margin-right: 0px;
@@ -164,16 +156,13 @@ margin-right: 45px;
     border-radius: 50%;
     font-size: 10px;
     color: #000;
-
     position: absolute;
-    top: -50%;
-    right: -50%;
+    top: -40%;
+    right: -65%;
 }
 
 .social__list {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     column-gap: 10px;
 }
 
@@ -204,17 +193,17 @@ margin-right: 45px;
     font-family: "MuliExtraBold", sans-serif;
     color: white;
     text-align: start;
-    padding-left: 40px;
+    padding-left: 36px;
 }
 
 .btn--green-bg {
-    background-color: #0aa566;
     position: relative;
 }
 
 .btn--green-bg:hover {
     background-color: #31614f;
     color: white;
+    cursor: pointer;
 }
 
 .btn--green-bg::after {
@@ -730,6 +719,7 @@ margin-right: 45px;
 
 .instagram {
     height: 560px;
+    width: 100%;
 }
 
 .instagram__social {
@@ -765,6 +755,10 @@ margin-right: 45px;
     display: flex;
     flex-basis: 20%;
     padding-bottom: 10px;
+}
+
+.instagram__img {
+    overflow-x: hidden;;
 }
 
 /* 9.FOOTER */
