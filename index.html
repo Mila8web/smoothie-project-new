@@ -16,63 +16,69 @@
     <!--1.HEADER-->
     <header class="header">
         <div class="header__top">
-            <nav class="header__nav nav">
-                <ul class="nav__list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Story</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                </ul>
-            </nav>
-            <div class="header__right-block">
-                <div class="header__personal personal">
-                    <ul class="personal__list">
-                        <li>
-                            <a class="personal__link" href="#">
-                                <img class="personal__icon-search" src="./assets/images/header-search-icon.png" alt="#">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="personal__link" href="#">
-                                <img class="personal__icon-user" src="./assets/images/header-user-icon.png" alt="#">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="personal__link" href="./assets/images/header-holder-cart-icon.png">
-                                <img class="personal__cart-icon" src="./assets/images/header-cart-icon.png" alt="#">
-                                <span class="personal__cart-count">0</span>
-                            </a>
-                        </li>
+            <div class="header__navigation">
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Story</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Testimonials</a></li>
                     </ul>
-                </div>
-                <div class="header__social social">
-                    <ul class="social__list">
-                        <li>
-                            <a href="./assets/images/header-holder-facebook-icon.png">
-                                <img src="./assets/images/header-facebook-icon.png" alt="#">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./assets/images/header-holder-pinterest-icon.png">
-                                <img src="./assets/images/header-pinterest-icon.png" alt="#">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./assets/images/header-holder-instagram-icon.png">
-                                <img src="./assets/images/header-instagram-icon.png" alt="#">
-                            </a>
-                        </li>
-                    </ul>
+                </nav>
+                <div class="header__right-block">
+                    <div class="header__personal personal">
+                        <ul class="personal__list">
+                            <li>
+                                <a class="personal__link" href="#">
+                                    <img class="personal__icon-search" src="./assets/images/header-search-icon.png"
+                                        alt="#">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="personal__link" href="#">
+                                    <img class="personal__icon-user" src="./assets/images/header-user-icon.png" alt="#">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="personal__link" href="./assets/images/header-holder-cart-icon.png">
+                                    <img class="personal__cart-icon" src="./assets/images/header-cart-icon.png" alt="#">
+                                    <span class="personal__cart-count">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__social social">
+                        <ul class="social__list">
+                            <li>
+                                <a href="./assets/images/header-holder-facebook-icon.png">
+                                    <img src="./assets/images/header-facebook-icon.png" alt="#">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/images/header-holder-pinterest-icon.png">
+                                    <img src="./assets/images/header-pinterest-icon.png" alt="#">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/images/header-holder-instagram-icon.png">
+                                    <img src="./assets/images/header-instagram-icon.png" alt="#">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <div class="header__logo logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="./assets/images/header-logo-img.png" alt="picture">
+                </a>
+            </div>
         </div>
-        <div class="header__logo logo">
-            <a class="logo__link" href="#">
-                <img class="logo__img" src="./assets/images/header-logo-img.png" alt="picture">
-            </a>
-        </div>
+        <button class="header__burger-btn">
+            <img class="header__burger-btn-icon" src="./assets/images/burger-menu.svg" alt="#">
+        </button>
         <div class="header__content">
             <button class="btn btn--green-bg header__btn">Shop Now</button>
         </div>
@@ -256,12 +262,22 @@
         <div class="instagram__social">
             <a class="instagram__social-link" href="#">ashasuperfoods</a>
         </div>
-        <div class="instagram__inner-img">
-            <img class="instagram__img" src="./assets/images/instagram-img1.png" alt="#">
-            <img class="instagram__img" src="./assets/images/instagram-img2.png" alt="#">
-            <img class="instagram__img" src="./assets/images/instagram-img3.png" alt="#">
-            <img class="instagram__img" src="./assets/images/instagram-img4.png" alt="#">
-            <img class="instagram__img" src="./assets/images/instagram-img5.png" alt="#">
+        <div class="instagram__gallery">
+            <div class="instagram__img-inner">
+                <img class="instagram__img" src="./assets/images/instagram-img1.png" alt="#">
+            </div>
+            <div class="instagram__img-inner">
+                <img class="instagram__img" src="./assets/images/instagram-img2.png" alt="#">
+            </div>
+            <div class="instagram__img-inner">
+                <img class="instagram__img" src="./assets/images/instagram-img3.png" alt="#">
+            </div>
+            <div class="instagram__img-inner">
+                <img class="instagram__img" src="./assets/images/instagram-img4.png" alt="#">
+            </div>
+            <div class="instagram__img-inner">
+                <img class="instagram__img" src="./assets/images/instagram-img5.png" alt="#">
+            </div>
         </div>
     </section>
     <!--9.FOOTER-->
@@ -269,7 +285,7 @@
         <div class="footer__top">
             <div class="footer__logo logo">
                 <a class="logo__link" href="#">
-                    <img class="logo__img" src="./assets/images/header-logo-img.png" alt="#">
+                    <img class="footer__logo-img" src="./assets/images/header-logo-img.png" alt="#">
                 </a>
             </div>
             <div class="footer__information">
