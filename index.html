@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./assets/fonts.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -87,7 +88,7 @@
     <section class="smoothies">
         <div class="smoothies__container container">
             <article class="smoothies__article article">
-                <h2 class="article__title title">What are these smoothies?</h2>
+                <h2 class="article__title title" data-aos="fade-right">What are these smoothies?</h2>
                 <p class="article__text text">A smoothie is a drink made from pureed raw fruit, vegetables, and
                     sometimes dairy products (milk, yogurt, ice-cream or cottage cheese), typically using a blender.
                     Smoothies may be made using other ingredients, such as water, crushed ice, fruit juice, sweeteners
@@ -138,7 +139,7 @@
             <img class="about__img" src="./assets/images/about-Img.png" alt="Welcom summer">
         </div>
         <div class="about__box-list">
-            <h2 class="title title--white">What makes Smoothie an
+            <h2 class="title title--white" data-aos="fade-right">What makes Smoothie an
                 <span class="title--yellow"> awesome drink?</span>
             </h2>
             <ul class="about__list">
@@ -172,7 +173,7 @@
     <!--4.PRODUCTS-->
     <section class="products">
         <div class="products__item products__item--bg-brown">
-            <img class="products__img" src="./assets/images/products-img1.png" alt="#">
+            <img class="products__img" data-aos="zoom-in" src="./assets/images/products-img1.png" alt="#">
             <h3 class="products__title title">Dark Chocolate Smoothie</h3>
             <span class="products__text">100 ml</span>
             <button class="products__btn btn">Buy<img class="products__btn-arrow"
@@ -180,7 +181,7 @@
             </button>
         </div>
         <div class="products__item  products__item--bg-green">
-            <img class="products__img" src="./assets/images/products-img2.png" alt="#">
+            <img class="products__img" data-aos="zoom-in" src="./assets/images/products-img2.png" alt="#">
             <h3 class="products__title title">Vegan Lettuce Smoothie</h3>
             <span class="products__text">100 ml</span>
             <button class="products__btn btn">Buy<img class="products__btn-arrow"
@@ -188,7 +189,7 @@
             </button>
         </div>
         <div class="products__item products__item--bg-yellow">
-            <img class="products__img" src="./assets/images/products-img3.png" alt="#">
+            <img class="products__img" data-aos="zoom-in" src="./assets/images/products-img3.png" alt="#">
             <h3 class="products__title title">Lemon Ginger Smoothie</h3>
             <span class="products__text">100 ml</span>
             <button class="products__btn btn">Buy<img class="products__btn-arrow"
@@ -196,7 +197,7 @@
             </button>
         </div>
         <div class="products__item products__item--bg-orange">
-            <img class="products__img" src="./assets/images/products-img4.png" alt="#">
+            <img class="products__img" data-aos="zoom-in" src="./assets/images/products-img4.png" alt="#">
             <h3 class="products__title title">Turmeric Garlic Smoothie</h3>
             <span class="products__text">100 ml</span>
             <button class="products__btn btn">Buy<img class="products__btn-arrow"
@@ -208,7 +209,7 @@
     <section class="story">
         <div class="story__container container">
             <article class="story__info info">
-                <h2 class="story__title title">Our story</h2>
+                <h2 class="story__title title" data-aos="fade-right">Our story</h2>
                 <p class="story__text">As products typically using raw fruits or vegetables,
                     smoothies include dietary fiber (e.g. pulp, skin, and seeds) and so are
                     thicker than fruit juice, often with a consistency similar to a milkshake.
@@ -224,7 +225,8 @@
     <!--6.TESTIMONIALS-->
     <section class="testimonials">
         <div class="testimonials__container container">
-            <h2 class="testimonials__title title">Why clients <span class="testimonials__title--span">LOVE</span> us?
+            <h2 class="testimonials__title title" data-aos="fade-right">Why clients <span
+                    class="testimonials__title--span">LOVE</span> us?
             </h2>
             <div class="testimonials__wrapper">
                 <div class="testimonials__inner-text">
@@ -246,7 +248,7 @@
     <!--7.BLOG-->
     <section class="blog">
         <div class="blog__container container">
-            <h2 class="blog__title title">Our blog</h2>
+            <h2 class="blog__title title" data-aos="fade-right">Our blog</h2>
             <div class="blog__wrapper">
                 <div class="blog__img-inner">
                     <img class="blog__img" src="./assets/images/blog-img.png" alt="#">
@@ -368,6 +370,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -67,6 +67,11 @@ button {
     border: none;
 }
 
+a:hover {
+    background-color: rgb(171, 167, 167, 0.3);
+    cursor: pointer;
+}
+
 image {
     width: 100%;
     object-fit: cover;
@@ -75,6 +80,13 @@ image {
 .btn {
     background-color: #0aa566;
     border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: #31614f;
+    color: white;
+    cursor: pointer;
+    padding-left: 10px;
 }
 
 /* 1.HEADER */
@@ -177,8 +189,18 @@ image {
 .header__logo {
     position: absolute;
     top: 70px;
-    left: 50%;
     transform: translateX(-50%);
+    animation: logoMove 3s forwards;
+}
+
+@keyframes logoMove {
+    from {
+        left: 0%
+    }
+
+    to {
+        left: 50%;
+    }
 }
 
 .header__burger-btn {
@@ -213,13 +235,6 @@ image {
 .header__btn {
     width: 280px;
     height: 70px;
-}
-
-
-.btn--green-bg:hover {
-    background-color: #31614f;
-    color: white;
-    cursor: pointer;
 }
 
 .btn--green-bg::after {
@@ -297,6 +312,11 @@ image {
     width: 250px;
     height: 200px;
     border-left: 2px solid #f6edde;
+    transition: all 3s ease;
+}
+
+.table__list-item:hover {
+    background-color: rgb(125, 181, 125);
 }
 
 .table__list-item:first-child,
@@ -533,8 +553,19 @@ image {
     background-image: url("../assets/images/story-stamp-img.png");
     background-size: cover;
     position: absolute;
-    top: 22px;
+    /* top: 22px; */
     left: -160px;
+    animation: storyElemMove 3s forwards;
+}
+
+@keyframes storyElemMove {
+    from {
+        top: -50px;
+    }
+
+    to {
+        top: 22px;
+    }
 }
 
 .story__btn {
@@ -544,7 +575,18 @@ image {
     height: 60px;
     border-radius: 30px;
     font-size: 2.1rem;
+    animation: storyBtnMove 3s forwards;
     padding-left: 30px;
+}
+
+@keyframes storyBtnMove {
+    from {
+        margin-left: -100px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
 }
 
 .story__btn-arrow {
@@ -621,7 +663,6 @@ image {
     z-index: 1;
 }
 
-
 .testimonials__wrapper::before {
     position: absolute;
     display: inline-block;
@@ -632,7 +673,44 @@ image {
     height: 148px;
     top: -30px;
     left: 440px;
+    animation: rotate-scale-up 0.65s linear both;
+    -webkit-animation: rotate-scale-up 0.65s linear both;
 }
+
+@-webkit-keyframes rotate-scale-up {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-scale-up {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
 
 .testimonials__inner-btn {
     display: flex;
@@ -907,6 +985,11 @@ image {
     z-index: 999;
 }
 
+.footer__btn:hover {
+    background-color: #c56844;
+    padding-bottom: 10px;
+}
+
 .footer__btn-arrow-top {
     background-size: cover;
     width: 20%;
@@ -953,6 +1036,10 @@ image {
         z-index: 9999;
         background-color: #0aa566;
         border-radius: 20px;
+    }
+
+    .header__burger-btn:hover {
+        background-color: #31614f;
     }
 
     .about {
